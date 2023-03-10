@@ -1,0 +1,274 @@
+/* CSS Document */
+/* Note: Multiple Divs can belong to one class /one class , Only one Id can belong to one div */
+
+
+
+
+
+.grid-row-span-2 {
+  grid-row: span 2;
+}
+
+/*Here we use css grid to create our photo gallery*/
+.photo-grid{
+  display: grid;
+  gap: 1.7rem; /*create gap between items*/
+  grid-template-columns: repeat(2, 1fr) ; /*declare our columns - 2 columns to be 1 fraction of a whole each*/
+  padding-block: 2rem;
+  margin-inline: auto;
+  justify-items: center;
+  align-items:center;
+  column-gap: 0rem;
+  width: 87%;
+}
+
+
+.photo img {
+  width: 90%; /*fill the image 90% of the space its contained in*/
+}
+
+.underline-on-hover {
+  text-decoration: none;
+  position: relative;
+}
+
+.underline-on-hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke ;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.underline-on-hover:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+
+.stickynavbar {  
+
+  width: 130px;
+  height: 100vh; /* Set the height to the full viewport height */
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.stickynavbar {
+  display: flex; /* Set display property to flex */
+  justify-content: center; /* Center the list items horizontally */
+  align-items: center; /* Center the list items vertically */
+}
+
+.stickynavbar ul {
+  list-style: none;
+
+}
+
+
+.stickynavbar li {
+  padding: 20px;
+  padding-right: 50px;
+  font-family: 'Cinzel', serif;
+  line-height: 1;
+}
+
+
+.stickynavbar a{
+  font-size: small;
+
+}
+.stickynavbar a , header{
+  font-family: 'Cinzel', serif;
+}
+
+header{
+  font-size:xx-large;
+  word-spacing: 10px;
+
+}
+
+.myName{
+  padding-bottom: 30px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+a {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+
+table{
+  background-color: whitesmoke;
+  opacity: 0.95;
+  border-collapse: collapse;
+  width: 50%;
+  color: black;
+
+
+}
+
+th, td{
+  padding: 1.5%;
+}
+
+
+body {
+  background-color: rgb(101, 175, 169);
+  color: white;
+  text-align: center;
+}
+
+.featuresbody{
+  margin-left: 130px;
+}
+
+img{
+  width: 70%;
+}
+
+
+
+figure{ 
+  display: flex;
+  justify-content: center;
+}
+
+
+/* This makes all the links not turn purple,and 'inherit' makes it used the same color as its parent - which is white*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav{
+  text-align: right;
+  margin-right: 3%;
+}
+
+.nav-link {
+  color: white;
+}
+
+.navbar{
+  margin-left: 3%;
+}
+
+form {
+  text-align: center; /*cemters the text*/
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  width: 45%;
+}
+.inputField {
+  margin-top: 20px;
+  padding-left: 10px;
+  border: 1px solid #777;
+  border-radius: 10px; /*this makes the box curved*/
+  width: 100%;
+  height: 35px;
+
+}
+
+.textAreaField {
+  resize: none; /*prevent height and width from being expanded*/
+  height: 175px;
+}
+
+
+.button {
+  border-radius: 20px;
+  color: white;
+  margin-top: 18px;
+  padding: 10px;
+  background-color: palevioletred;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: rgb(215, 79, 125);
+}
+
+table {
+  margin: auto;
+}
+
+/*This prevents the html name contents being shown when you hover above links*/
+a:hover {
+  
+}
+
+.carousel {
+  width: 70%; /*makes the width of the carousel in proportion to the page smaller */
+  margin: 0 auto; /*centers the carousel horozontally within its parent property*/
+}
+
+/*To make the carousel transitions smoother by increasing the duration of the transition */
+.carousel-item {
+  transition: transform 0.7s ease-in-out;
+}
+
+.carousel-item img {
+  border-radius: 0.3cm; /*curve the sited of the images*/
+}
+
+footer {
+  background-color: rgb(37, 141, 132);
+  color: rgb(255, 255, 255);
+  padding: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*Make the navbar collapse only when the screen size is less than or equal to the width of a phone (320px) but only if the navbar is currently not shown (i.e., not collapsed)*/
+/*This ensures that the navbar is visible to users when the screen size is larger than 320px, but collapses into a burger menu when viewed on a phone screen.*/
+@media only screen and (max-width: 320px) {
+  .navbar-collapse:not(.show) {
+    display: none;
+  }
+
+}
+
+/* PHONE VERSION */
+@media only screen and (mxn-width: 320px) {
+
+}
+
+/* TABLET VERSION */
+@media only screen and (min-width: 768px) {
+  
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 980px) {
+
+}

@@ -180,3 +180,30 @@ document.addEventListener("DOMContentLoaded", function() {
     post.setAttribute("src", postSrc);
   });
 });
+
+
+/*This enables the dark and light mode*/
+
+/*
+
+NOTE: I've wrapped the js in 'document.addEventListener('DOMContentLoaded', function()'
+
+This is beause, without it,  the element i'm trying to add an event listener hasn't been loaded yet.
+
+So I've wrapped my script in a DOMContentLoaded event listener to make sure the DOM has loaded before the code for the darkmode/lightmode is executed.
+
+*/
+
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleSwitch = document.querySelector('#checkbox');
+
+  function switchTheme(e) {
+    if (e.target.checked) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  }
+
+  toggleSwitch.addEventListener('change', switchTheme, false);
+});

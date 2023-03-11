@@ -1,7 +1,26 @@
 /* CSS Document */
 /* Note: Multiple Divs can belong to one class /one class , Only one Id can belong to one div */
 
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 9px;
+  border-radius: 0.3cm;
 
+}
+
+#back-to-top-btn:hover {
+  background-color: #555;
+}
 
 
 

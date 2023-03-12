@@ -73,7 +73,7 @@ body.dark-mode {
 
 body.dark-mode .stickynavbar,
 body.dark-mode footer {
-  background-color: black;
+  background-color: rgb(16, 16, 16);
 }
 
 body.dark-mode .navbar-toggler{

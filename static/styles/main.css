@@ -238,6 +238,18 @@ a {
   text-align: center;
 }
 
+h1 {
+  letter-spacing: 15px;
+}
+
+h5 {
+letter-spacing: 2px;
+font-size:medium;
+margin-left: 83px;
+padding: 15px;
+text-align: left;
+}
+
 
 table{
   background-color: whitesmoke;

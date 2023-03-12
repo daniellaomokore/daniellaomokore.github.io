@@ -65,8 +65,19 @@
           <h1>YELLA</h1>
         </div>
 
-      <h5>Email: daniellaomokore@gmail.com</h5>
+      <h5>Email: daniellaomokore@gmail.com<br><br><strong>Measurements:</strong><br>Height 5ft6 | 167cm<br>Waist 25”<br>Bust 33”<br>Hips 34”
+      </h5>
 
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <h2>Contact Me</h2>
+        <input class="inputField" placeholder="NAME" type="text" name="name" required>
+        <input class="inputField" placeholder="EMAIL" type="email" name="email" required>
+        <input class="inputField" placeholder="SUBJECT" type="text" name="subject" required>
+        <!--This defines multi line text input-->
+        <textarea class="inputField textAreaField" placeholder="MESSAGE" type="text" name="message" required></textarea>
+        <button class="button" type="submit">Submit</button>
+      </form>
       
    
     <button id="back-to-top-btn">Back to Top</button>

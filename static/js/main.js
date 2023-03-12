@@ -207,3 +207,72 @@ document.addEventListener('DOMContentLoaded', function() {
 
   toggleSwitch.addEventListener('change', switchTheme, false);
 });
+
+
+
+
+// Contact form email validators
+
+// Get the form element
+const form = document.querySelector('form[name="contact"]');
+
+// Get the input fields
+const nameInput = form.querySelector('input[name="name"]');
+const emailInput = form.querySelector('input[name="email"]');
+const subjectInput = form.querySelector('input[name="subject"]');
+const messageInput = form.querySelector('textarea[name="message"]');
+
+// Add event listeners to the input fields
+nameInput.addEventListener('input', validateName);
+emailInput.addEventListener('input', validateEmail);
+subjectInput.addEventListener('input', validateSubject);
+messageInput.addEventListener('input', validateMessage);
+
+// Define the validation functions
+function validateName() {
+  const name = nameInput.value.trim();
+
+  if (name === '') {
+    nameInput.setCustomValidity('Name is required');
+  } else {
+    nameInput.setCustomValidity('');
+  }
+}
+
+function validateEmail() {
+  const email = emailInput.value.trim();
+
+  if (email === '') {
+    emailInput.setCustomValidity('Email is required');
+  } else if (!isValidEmail(email)) {
+    emailInput.setCustomValidity('Please enter a valid email address');
+  } else {
+    emailInput.setCustomValidity('');
+  }
+}
+
+function validateSubject() {
+  const subject = subjectInput.value.trim();
+
+  if (subject === '') {
+    subjectInput.setCustomValidity('Subject is required');
+  } else {
+    subjectInput.setCustomValidity('');
+  }
+}
+
+function validateMessage() {
+  const message = messageInput.value.trim();
+
+  if (message === '') {
+    messageInput.setCustomValidity('Message is required');
+  } else {
+    messageInput.setCustomValidity('');
+  }
+}
+
+// Define a function to check if an email is valid
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}

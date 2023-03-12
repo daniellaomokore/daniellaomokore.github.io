@@ -14,5 +14,5 @@ My Favourite Features:
 
 - A contact form has been added to the website to enable users to send emails directly from the site. To enable form submissions, I hosted and deployed the website on Netlify, a cloud-based platform.
 
-<img width="958" alt="image" src="https://user-images.githubusercontent.com/79287671/224573156-8fc17973-0c0e-448b-8bef-c3db112030f8.png">
-<img width="960" alt="image" src="https://user-images.githubusercontent.com/79287671/224573181-4796820b-2e10-445e-b969-aef9e485c6b9.png">
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/79287671/224573254-7d013216-ec64-4354-9b5e-c89857bccc33.png">
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/79287671/224573267-c7d20275-6f4a-4e86-8dcb-ff24a0c794ae.png">

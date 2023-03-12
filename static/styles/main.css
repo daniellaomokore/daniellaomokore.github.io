@@ -143,6 +143,7 @@ ion-icon:hover {
 }
 
 
+
 .photo img {
   width: 90%; /*fill the image 90% of the space its contained in*/
 }
@@ -317,10 +318,9 @@ nav{
 
 
 form {
-  margin-left: 90px;
-  padding-bottom: 70px;
-  width: 37%;
+  width: 60%;
 }
+
 .inputField {
   margin-top: 20px;
   padding-left: 10px;
@@ -333,7 +333,7 @@ form {
 
 .textAreaField {
   resize: none; /*prevent height and width from being expanded*/
-  height: 175px;
+  height: 90px;
 }
 
 
@@ -341,7 +341,7 @@ form {
   border-radius: 20px;
   color: white;
   margin-top: 18px;
-  padding: 10px;
+  padding: 4px;
   background-color: palevioletred;
   border: none;
   cursor: pointer;

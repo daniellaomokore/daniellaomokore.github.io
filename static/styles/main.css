@@ -1,7 +1,17 @@
 /* CSS Document */
 /* Note: Multiple Divs can belong to one class /one class , Only one Id can belong to one div */
 
+.form-wrapper {
+  display: inline-block;
+  width: 50%;
+}
 
+.about-section {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  margin-top: 20px;
+}
 
 
 /*Settings for the dark mode toggle bar, theme switch & the dark mode page colour settings */
@@ -245,8 +255,7 @@ h1 {
 h5 {
 letter-spacing: 2px;
 font-size:medium;
-margin-left: 83px;
-padding: 15px;
+margin-left: 90px;
 text-align: left;
 }
 
@@ -319,11 +328,9 @@ nav{
 
 
 form {
-  text-align: center; /*cemters the text*/
-  margin: 0 auto;
-  padding-top: 50px;
+  margin-left: 90px;
   padding-bottom: 70px;
-  width: 45%;
+  width: 37%;
 }
 .inputField {
   margin-top: 20px;

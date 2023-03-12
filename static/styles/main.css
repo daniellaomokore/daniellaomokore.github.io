@@ -1,17 +1,6 @@
 /* CSS Document */
 /* Note: Multiple Divs can belong to one class /one class , Only one Id can belong to one div */
 
-.form-wrapper {
-  display: inline-block;
-  width: 50%;
-}
-
-.about-section {
-  display: inline-block;
-  width: 50%;
-  vertical-align: top;
-  margin-top: 20px;
-}
 
 
 /*Settings for the dark mode toggle bar, theme switch & the dark mode page colour settings */

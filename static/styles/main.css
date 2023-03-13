@@ -3,6 +3,9 @@
 
 
 
+
+
+
 /*Settings for the dark mode toggle bar, theme switch & the dark mode page colour settings */
 
 .theme-switch-wrapper {
@@ -92,15 +95,15 @@ body.dark-mode .navbar-toggler{
 
 
 /*makes the social media icon be size xx-large and when you hover over it the size increases by 1.2*/
-ion-icon {
+.fab{
+  
   font-size: xx-large;
   transition: transform 0.2s ease-in-out;
 }
 
-ion-icon:hover {
+.fab:hover{
   transform: scale(1.2);
 }
-
 
 
 

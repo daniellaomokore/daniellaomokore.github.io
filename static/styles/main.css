@@ -151,13 +151,14 @@ ion-icon:hover {
 .underline-on-hover {
   text-decoration: none;
   position: relative;
+  display: inline-block;
 }
 
 .underline-on-hover::after {
   content: '';
   position: absolute;
   width: 100%;
-  height: 1px;
+  height: 0.5px;
   bottom: 0;
   left: 0;
   background-color: whitesmoke ;
@@ -193,7 +194,6 @@ ion-icon:hover {
 
 .stickynavbar ul {
   list-style: none;
-
 }
 
 
@@ -207,10 +207,10 @@ ion-icon:hover {
 
 .stickynavbar a{
   font-size: small;
-
 }
 .stickynavbar a , header{
   font-family: 'Cinzel', serif;
+
 }
 
 
@@ -392,15 +392,13 @@ footer a:hover {
 
 /*Make the navbar collapse only when the screen size is less than or equal to the width of a phone (320px) but only if the navbar is currently not shown (i.e., not collapsed)*/
 /*This ensures that the navbar is visible to users when the screen size is larger than 320px, but collapses into a burger menu when viewed on a phone screen.*/
+
+/* PHONE VERSION */
 @media only screen and (max-width: 320px) {
   .navbar-collapse:not(.show) {
     display: none;
   }
-
-}
-
-/* PHONE VERSION */
-@media only screen and (mxn-width: 320px) {
+  
 
 }
 

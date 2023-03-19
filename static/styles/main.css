@@ -151,6 +151,13 @@ video {
   height: auto;
 }
 
+.youtubeembeddedvideo {
+    width: 72%;
+    height: 500px;
+  
+    padding-bottom: 40px;
+}
+
 .photo img {
   width: 90%; /*fill the image 90% of the space its contained in*/
 }
@@ -425,6 +432,11 @@ footer a:hover {
     margin-left: 90px;
   }
 
+  .youtubeembeddedvideo {
+    width: 78.2%;
+    height: 222px;
+  }
+
 
 }
 
@@ -434,6 +446,13 @@ footer a:hover {
   .photo-grid {
     grid-template-columns: repeat(1, 1fr);  /* This means that when the screen is this size of smaller the arrangement of the grid photos goes back to the default where everything is displayed in a single column*/
   }
+
+  .youtubeembeddedvideo {
+    width: 78.2%;
+    height: 385px;
+  }
+
+  
 }
 
 /* Styles for screens with a minimum width of 1025px (desktops) */

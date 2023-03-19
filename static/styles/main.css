@@ -2,6 +2,9 @@
 /* Note: Multiple Divs can belong to one class /one class , Only one Id can belong to one div */
 
 
+.container {
+  width: 85%;
+}
 
 
 
@@ -132,23 +135,30 @@ body.dark-mode .navbar-toggler{
   grid-row: span 2;
 }
 
-/*Here we use css grid to create our photo gallery*/
+/*Here we use css grid for our contact form and email info area*/
 .photo-grid{
   display: grid;
-  gap: 1.7rem; /*create gap between items*/
+  grid-gap: 50px; /*create gap between items (underneath)*/
   grid-template-columns: repeat(2, 1fr) ; /*declare our columns - 2 columns to be 1 fraction of a whole each*/
-  padding-block: 2rem;
   margin-inline: auto;
   justify-items: center;
   align-items:center;
-  column-gap: 0rem;
   width: 87%;
 }
 
-
+video {
+  width: 100%;
+  height: auto;
+}
 
 .photo img {
   width: 90%; /*fill the image 90% of the space its contained in*/
+}
+
+
+.photo {
+  grid-row: auto;
+  grid-column: auto;
 }
 
 .underline-on-hover {
@@ -396,21 +406,37 @@ footer a:hover {
 /*Make the navbar collapse only when the screen size is less than or equal to the width of a phone (320px) but only if the navbar is currently not shown (i.e., not collapsed)*/
 /*This ensures that the navbar is visible to users when the screen size is larger than 320px, but collapses into a burger menu when viewed on a phone screen.*/
 
-/* PHONE VERSION */
-@media only screen and (max-width: 320px) {
-  .navbar-collapse:not(.show) {
-    display: none;
+
+
+/* Styles for screens with a maximum width of 600px (phones) */
+
+@media screen and (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: repeat(1, 1fr);  /* This means that when the screen is this size of smaller the arrangement of the grid photos goes back to the default where everything is displayed in a single column*/
+  }
+  
+  .stickynavbar {  
+
+    width: 90px;
+    height: 100vh;
   }
 
-}
+  .featuresbody{
+    margin-left: 90px;
+  }
 
-/* TABLET VERSION */
-@media only screen and (min-width: 768px) {
-  
-}
-
-/* DESKTOP VERSION */
-@media only screen and (min-width: 980px) {
 
 }
 
+/* Styles for screens with a minimum width of 601px and a maximum width of 1024px (tablets) */
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .photo-grid {
+    grid-template-columns: repeat(1, 1fr);  /* This means that when the screen is this size of smaller the arrangement of the grid photos goes back to the default where everything is displayed in a single column*/
+  }
+}
+
+/* Styles for screens with a minimum width of 1025px (desktops) */
+
+@media screen and (min-width: 1025px) {
+}

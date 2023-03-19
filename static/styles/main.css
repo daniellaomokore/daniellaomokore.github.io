@@ -144,18 +144,27 @@ body.dark-mode .navbar-toggler{
   justify-items: center;
   align-items:center;
   width: 87%;
+  padding-bottom: 70px;
+  padding-top: 30px;
 }
 
+
 video {
-  width: 100%;
-  height: auto;
+  width: 380px;
+  height: 640px
 }
+
+
+.doublegettyphoto{
+  padding-bottom: 50px;
+  transform: scale(0.92); /*scale down an image to 92% of its original size*/
+}
+
 
 .youtubeembeddedvideo {
     width: 72%;
     height: 500px;
-  
-    padding-bottom: 40px;
+    padding-bottom: 1px;
 }
 
 .photo img {
@@ -434,7 +443,12 @@ footer a:hover {
 
   .youtubeembeddedvideo {
     width: 78.2%;
-    height: 222px;
+    height: 169px;
+  }
+
+  video {
+    transform: scale(0.90); /*scale down an image to 90% of its original size*/
+  
   }
 
 

@@ -466,6 +466,10 @@ footer a:hover {
     margin-left: 0px;  /* remove the margin when using a phone since the navbar gets collapsed t0 a burger menu*/
   }
 
+  .photo.covertwocolumns{
+    grid-column:auto   /*this resolves the issue of the first google uk pic being hidden(due to spanning the 3rd google pic across 2/2 colums) when we have a small screen size*/
+  }
+
   
 
 }

@@ -119,7 +119,6 @@ body.dark-mode .navbar-toggler{
   z-index: 99;
   font-size: 16px;
   border: none;
-  outline: none;
   background-color: #333;
   color: whitesmoke;
   cursor: pointer;
@@ -304,19 +303,14 @@ body {
 
 }
 
-
-
 img{
   width: 70%;
 }
-
-
 
 figure{ 
   display: flex;
   justify-content: center;
 }
-
 
 /* This makes all the links not turn purple, and 'inherit' makes it used the same color as its parent - which is white*/
 a {
@@ -452,7 +446,7 @@ footer a:hover {
   }
 
   .navbar-collapse {
-    background-color: rgba(128, 128, 128, 0.932);
+    background-color: rgba(53, 51, 51, 0.865);
     border-radius:5px;
   }
 

@@ -1,11 +1,6 @@
 /* CSS Document */
 /* Note: Multiple Divs can belong to one class /one class , Only one Id can belong to one div */
 
-/*increase the side of the left margin so that the main contents of don't get hidden under the side nav bar*/
-.projectsmain{
-  margin-left: 130px;
-}
-
 
 .container {
   width: 85%;
@@ -364,18 +359,14 @@ table {
   margin: auto;
 }
 
-
-
-.aboutmeheader{
-  border-bottom: 1.5px solid whitesmoke;
-  display: inline-block;  /*This makes the header take up only as much width as necessary, so the underline will only be under the "About" part of the header.*/
+/*This prevents the html name contents being shown when you hover above links*/
+a:hover {
 }
-.aboutmetext p{
-  text-align: justify;
-  width: 90%;
-  line-height: 2;
-  margin: 0 auto;/* centers the element itself within its parent container by setting equal margins on the left and right sides.*/
-  padding-top: 20px;
+
+/*The carousel is only in the original draft*/
+.carousel {
+  width: 70%; /*makes the width of the carousel in proportion to the page smaller */
+  margin: 0 auto; /*centers the carousel horozontally within its parent property*/
 }
 
 /*To make the carousel transitions smoother by increasing the duration of the transition */

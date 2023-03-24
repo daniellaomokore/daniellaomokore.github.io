@@ -7,8 +7,6 @@
 }
 
 
-
-
 .container {
   width: 85%;
 }
@@ -152,6 +150,11 @@ body.dark-mode .navbar-toggler{
   padding-top: 0px; /*override thepadding top for just the contain form and email section at the top so that it's not really far away from the 'YELLA' Heading*/
 }
 
+.photo-grid-contact{
+  grid-template-columns: 550px 1fr;
+  align-items: start;
+  padding-top: 35px;
+}
 
 
 .photo{
@@ -397,12 +400,6 @@ table {
   transition: transform 0.7s ease-in-out;
 }
 
-.carousel-item img {
-  max-height: 470px; /* Set a maximum height for the images in the carousel */
-  object-fit: cover; /* Ensure the images fill the container while maintaining aspect ratio */
-}
-
-
 
 .carousel-item img {
   border-radius: 0.3cm; /*curve the sited of the images*/
@@ -437,6 +434,8 @@ footer a:hover {
     align-items: center;
     justify-content: center;
   }
+
+  
   
   .stickynavbar{  
     height: 100vh;

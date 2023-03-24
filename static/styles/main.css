@@ -7,6 +7,8 @@
 }
 
 
+
+
 .container {
   width: 85%;
 }
@@ -98,7 +100,7 @@ body.dark-mode .navbar-toggler{
 
 /*makes the social media icon be size xx-large and when you hover over it the size increases by 1.2*/
 .fab{
-  
+  padding-top: 10px;
   font-size: xx-large;
   transition: transform 0.2s ease-in-out;
 }
@@ -133,7 +135,7 @@ body.dark-mode .navbar-toggler{
   grid-row: span 2;
 }
 
-/*Here we use css grid for our contact form and email info area*/
+/* we use css grid for our contact form and email info area aswell as photo gallerys */
 .photo-grid{
   display: grid;
   grid-gap: 50px; /*create gap between items (underneath)*/
@@ -145,6 +147,12 @@ body.dark-mode .navbar-toggler{
   padding-bottom: 70px;
   padding-top: 30px;
 }
+
+.photo-grid-top{
+  padding-top: 0px; /*override thepadding top for just the contain form and email section at the top so that it's not really far away from the 'YELLA' Heading*/
+}
+
+
 
 .photo{
   width: 100%;
@@ -247,7 +255,7 @@ header{
 }
 
 .myName{
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 p,
@@ -322,8 +330,13 @@ nav{
   text-align: right;
   padding-top: 50px;
   margin-right: 3%;
-  
 }
+
+nav a{
+font-size: large;
+}
+
+
 
 form {
   width: 60%;
@@ -370,9 +383,10 @@ table {
   border-bottom: 1.5px solid whitesmoke;
   display: inline-block;  /*This makes the header take up only as much width as necessary, so the underline will only be under the "About" part of the header.*/
 }
+
 .aboutmetext p{
   text-align: justify;
-  width: 90%;
+  width: 90% auto;
   line-height: 2;
   margin: 0 auto;/* centers the element itself within its parent container by setting equal margins on the left and right sides.*/
   padding-top: 20px;
@@ -382,6 +396,13 @@ table {
 .carousel-item {
   transition: transform 0.7s ease-in-out;
 }
+
+.carousel-item img {
+  max-height: 470px; /* Set a maximum height for the images in the carousel */
+  object-fit: cover; /* Ensure the images fill the container while maintaining aspect ratio */
+}
+
+
 
 .carousel-item img {
   border-radius: 0.3cm; /*curve the sited of the images*/
@@ -459,7 +480,7 @@ footer a:hover {
     font-size: small;
   }
 
-  main{
+  .projectsmain{
     margin-left: 0px;  /* remove the margin when using a phone since the navbar gets collapsed t0 a burger menu*/
   }
 

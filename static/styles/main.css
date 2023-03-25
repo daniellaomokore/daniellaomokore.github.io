@@ -382,7 +382,7 @@ table {
 
 
 
-.aboutmeheader{
+.sectionheader{
   border-bottom: 1.5px solid whitesmoke;
   display: inline-block;  /*This makes the header take up only as much width as necessary, so the underline will only be under the "About" part of the header.*/
 }

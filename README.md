@@ -1,6 +1,6 @@
 # daniellaomokore-portfolio
 
-Link: [daniellaomokore.netlify.app/](https://daniellao.netlify.app/)
+Link: [daniellao.netlify.app/](https://daniellao.netlify.app/)
 
 I developed a dynamic modelling portfolio website from scratch and it comes with some features I'm sure many people would appreciate.
 

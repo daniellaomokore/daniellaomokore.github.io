@@ -1,35 +1,36 @@
-$(document).ready(function() {
-  // Initialize Bootstrap Carousel with wrap option
-  $('#carouselExampleCaptions').carousel({
-    wrap: true
-  });
+$(document).ready(function() {const myCarousel = document.querySelector('#carouselExampleCaptions')
+const carousel = new bootstrap.Carousel(myCarousel, {
+  wrap: false
+})
 
-  // Add custom JavaScript code to allow clicking on arrows to move back and forth between slides
-  $('#carouselExample .carousel-control-prev').click(function() {
-    $('#carouselExampleCaptions').carousel('prev');
-  });
+const prevBtn = document.querySelector('.carousel-control-prev')
+const nextBtn = document.querySelector('.carousel-control-next')
 
-  $('#carouselExample .carousel-control-next').click(function() {
-    $('#carouselExampleCaptions').carousel('next');
-  });
+prevBtn.addEventListener('click', () => {
+  carousel.prev()
+})
 
-  // Add custom JavaScript code to disable prev/next buttons when on first/last slide
-  $('#carouselExampleCaptions').on('slid.bs.carousel', function() {
-    var currentIndex = $('div.active').index() + 1;
-    var totalItems = $('.carousel-item').length;
+nextBtn.addEventListener('click', () => {
+  carousel.next()
+})
 
-    if (currentIndex === 1) {
-      $('.carousel-control-prev').hide();
-    } else {
-      $('.carousel-control-prev').show();
-    }
+myCarousel.addEventListener('slide.bs.carousel', (e) => {
+  const activeSlide = e.relatedTarget
+  const firstSlide = myCarousel.querySelector('.carousel-item:first-child')
+  const lastSlide = myCarousel.querySelector('.carousel-item:last-child')
+  const prevBtn = document.querySelector('.carousel-control-prev')
+  const nextBtn = document.querySelector('.carousel-control-next')
 
-    if (currentIndex === totalItems) {
-      $('.carousel-control-next').hide();
-    } else {
-      $('.carousel-control-next').show();
-    }
-  });
+  if (activeSlide === firstSlide) {
+    prevBtn.classList.add('disabled')
+  } else if (activeSlide === lastSlide) {
+    nextBtn.classList.add('disabled')
+  } else {
+    prevBtn.classList.remove('disabled')
+    nextBtn.classList.remove('disabled')
+  }
+})
+
 });
 
 

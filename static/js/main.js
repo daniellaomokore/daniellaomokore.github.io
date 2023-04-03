@@ -1,46 +1,44 @@
-$(document).ready(function() {const myCarousel = document.querySelector('#carouselExampleCaptions')
-const carousel = new bootstrap.Carousel(myCarousel, {
-  wrap: false
-})
 
-const prevBtn = document.querySelector('.carousel-control-prev')
-const nextBtn = document.querySelector('.carousel-control-next')
 
-prevBtn.addEventListener('click', () => {
-  carousel.prev()
-})
 
-nextBtn.addEventListener('click', () => {
-  carousel.next()
-})
 
-myCarousel.addEventListener('slide.bs.carousel', (e) => {
-  const activeSlide = e.relatedTarget
-  const firstSlide = myCarousel.querySelector('.carousel-item:first-child')
-  const lastSlide = myCarousel.querySelector('.carousel-item:last-child')
-  const prevBtn = document.querySelector('.carousel-control-prev')
-  const nextBtn = document.querySelector('.carousel-control-next')
 
-  if (activeSlide === firstSlide) {
-    prevBtn.classList.add('disabled')
-  } else if (activeSlide === lastSlide) {
-    nextBtn.classList.add('disabled')
-  } else {
-    prevBtn.classList.remove('disabled')
-    nextBtn.classList.remove('disabled')
-  }
-})
 
-});
+
+
+// JS --> THIS ALLOWS USERS TO SMOOTHLY SCROLL TO CERTAIN LINKED AREAS OF THE PAGE
+
+  // Select all links with hashes
+  const links = document.querySelectorAll('a[href*="#"]');
+
+  // Loop through each link and add a click event listener
+  links.forEach(link => {
+    link.addEventListener('click', event => {
+      // Prevent default link behavior
+      event.preventDefault();
+
+      // Get the ID of the section we want to scroll to
+      const id = link.getAttribute('href').substring(1);
+      const target = document.getElementById(id);
+
+      // If the target section exists, scroll to it smoothly
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
 
 
 
 // JS --> THIS ALLOWS THE USER TO USE A BUTTON TO SCROLL TO THE TOP OF THE PAGE
 
 /*
-NOTE: I've wrapped the js in 'window.onload = function()' because the below The script that defines 
+NOTE: I've wrapped the js in 'window.onload = function()' because the below The script that defines
  the behavior of the button was being executed before the button had loaded --> causing the button not to work.
- So, To fix this, I wrap the script inside a window.onload function to make sure that it is executed only 
+ So, To fix this, I wrap the script inside a window.onload function to make sure that it is executed only
  after the page has finished loading.
 */
 
@@ -51,7 +49,7 @@ window.onload = function() {
     window.onscroll = function() {
       showBackToTopButton();
     };
-  
+
     function showBackToTopButton() {
       var button = document.getElementById("back-to-top-btn");
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -60,12 +58,12 @@ window.onload = function() {
         button.style.display = "none";
       }
     }
-  
+
     // Scroll to the top of the page when the user clicks the back-to-top button
     document.getElementById("back-to-top-btn").addEventListener("click", function() {
       scrollToTop();
     });
-  
+
     function scrollToTop() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
@@ -177,6 +175,10 @@ function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
+
+
+
+
 
 
   

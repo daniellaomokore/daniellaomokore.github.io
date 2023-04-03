@@ -1,3 +1,36 @@
+$(document).ready(function() {
+  // Initialize Bootstrap Carousel with wrap option
+  $('#carouselExample').carousel({
+    wrap: true
+  });
+
+  // Add custom JavaScript code to allow clicking on arrows to move back and forth between slides
+  $('#carouselExample .carousel-control-prev').click(function() {
+    $('#carouselExample').carousel('prev');
+  });
+
+  $('#carouselExample .carousel-control-next').click(function() {
+    $('#carouselExample').carousel('next');
+  });
+
+  // Add custom JavaScript code to disable prev/next buttons when on first/last slide
+  $('#carouselExample').on('slid.bs.carousel', function() {
+    var currentIndex = $('div.active').index() + 1;
+    var totalItems = $('.carousel-item').length;
+
+    if (currentIndex === 1) {
+      $('.carousel-control-prev').hide();
+    } else {
+      $('.carousel-control-prev').show();
+    }
+
+    if (currentIndex === totalItems) {
+      $('.carousel-control-next').hide();
+    } else {
+      $('.carousel-control-next').show();
+    }
+  });
+});
 
 
 

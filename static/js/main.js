@@ -1,20 +1,20 @@
 $(document).ready(function() {
   // Initialize Bootstrap Carousel with wrap option
-  $('#carouselExample').carousel({
+  $('#carouselExampleCaptions').carousel({
     wrap: true
   });
 
   // Add custom JavaScript code to allow clicking on arrows to move back and forth between slides
   $('#carouselExample .carousel-control-prev').click(function() {
-    $('#carouselExample').carousel('prev');
+    $('#carouselExampleCaptions').carousel('prev');
   });
 
   $('#carouselExample .carousel-control-next').click(function() {
-    $('#carouselExample').carousel('next');
+    $('#carouselExampleCaptions').carousel('next');
   });
 
   // Add custom JavaScript code to disable prev/next buttons when on first/last slide
-  $('#carouselExample').on('slid.bs.carousel', function() {
+  $('#carouselExampleCaptions').on('slid.bs.carousel', function() {
     var currentIndex = $('div.active').index() + 1;
     var totalItems = $('.carousel-item').length;
 

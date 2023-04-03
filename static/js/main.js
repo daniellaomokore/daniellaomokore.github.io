@@ -1,44 +1,13 @@
-// script.js
-
-const prevBtn = document.querySelector('.carousel-control-prev');
-const nextBtn = document.querySelector('.carousel-control-next');
-const carousel = document.querySelector('.carousel');
-
-prevBtn.addEventListener('click', () => {
-  carousel.querySelector('.active').previousElementSibling?.classList.add('active');
-  carousel.querySelector('.active + .carousel-item')?.classList.remove('active');
-});
-
-nextBtn.addEventListener('click', () => {
-  carousel.querySelector('.active').nextElementSibling?.classList.add('active');
-  carousel.querySelector('.active + .carousel-item')?.classList.remove('active');
-});
-
-
-
-// JS --> THIS ALLOWS USERS TO SMOOTHLY SCROLL TO CERTAIN LINKED AREAS OF THE PAGE
-
-  // Select all links with hashes
-  const links = document.querySelectorAll('a[href*="#"]');
-  
-  // Loop through each link and add a click event listener
-  links.forEach(link => {
-    link.addEventListener('click', event => {
-      // Prevent default link behavior
-      event.preventDefault();
-      
-      // Get the ID of the section we want to scroll to
-      const id = link.getAttribute('href').substring(1);
-      const target = document.getElementById(id);
-      
-      // If the target section exists, scroll to it smoothly
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth'
-        });
-      }
-    });
+$(document).ready(function(){
+  $('#carouselExampleCaptions').carousel({interval: 3200});
+  $('.carousel-control-prev').click(function(){
+      $('#carouselExampleCaptions').carousel('prev');
   });
+  $('.carousel-control-next').click(function(){
+      $('#carouselExampleCaptions').carousel('next');
+  });
+});
+
 
 
 

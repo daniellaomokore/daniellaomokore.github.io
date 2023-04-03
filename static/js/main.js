@@ -1,6 +1,19 @@
 
 
 
+$(document).ready(function() {
+  // get the carousel element
+  var carousel = document.querySelector('#carouselExampleCaptions');
+
+  // add an event listener to the 'slid.bs.carousel' event
+  carousel.addEventListener('slid.bs.carousel', function (event) {
+    // check if the last slide has been reached
+    if($(event.relatedTarget).index() == ($('.carousel-inner .carousel-item').length -1)){
+      // if so, go back to the first slide
+      $('#carouselExampleCaptions').carousel('prev');
+    }
+  });
+});
 
 
 

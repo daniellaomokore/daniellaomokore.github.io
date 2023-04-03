@@ -1,11 +1,5 @@
 
 
-
-
-
-
-
-
 // JS --> THIS ALLOWS USERS TO SMOOTHLY SCROLL TO CERTAIN LINKED AREAS OF THE PAGE
 
   // Select all links with hashes

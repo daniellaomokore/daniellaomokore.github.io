@@ -1,3 +1,36 @@
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function(event) {
+
+  // Get the carousel element
+  var carousel = document.querySelector("#carouselExampleCaptions");
+
+  // Initialize the carousel using Bootstrap's JavaScript API
+  var carouselInstance = new bootstrap.Carousel(carousel, {
+    interval: 3200,
+    wrap: true
+  });
+
+  // Add an event listener for the carousel slide event
+  carousel.addEventListener("slide.bs.carousel", function(event) {
+
+    // Get the total number of slides
+    var totalSlides = carouselInstance.getTotalSlides();
+
+    // Check if the carousel is at the first slide
+    if (event.direction === "left" && event.to === 0) {
+
+      // If the carousel is at the first slide and the user wants to go back, go to the last slide
+      carouselInstance.to(totalSlides - 1);
+    }
+
+    // Check if the carousel is at the last slide
+    if (event.direction === "right" && event.to === totalSlides - 1) {
+
+      // If the carousel is at the last slide and the user wants to go forward, go to the first slide
+      carouselInstance.to(0);
+    }
+  });
+});
 
 
 // JS --> THIS ALLOWS USERS TO SMOOTHLY SCROLL TO CERTAIN LINKED AREAS OF THE PAGE

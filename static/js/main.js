@@ -1,14 +1,3 @@
-$(document).ready(function(){
-  $('#carouselExampleCaptions').carousel({interval: 3200});
-  $('.carousel-control-prev').click(function(){
-      $('#carouselExampleCaptions').carousel('prev');
-  });
-  $('.carousel-control-next').click(function(){
-      $('#carouselExampleCaptions').carousel('next');
-  });
-});
-
-
 
 
 

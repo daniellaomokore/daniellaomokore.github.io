@@ -1,6 +1,15 @@
 /* CSS Document */
 /* Note: Multiple Divs can belong to one class /one class , Only one Id can belong to one div */
 
+
+
+.articlelink {
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
 /*increase the side of the left margin so that the main contents of don't get hidden under the side nav bar*/
 .projectsmain{
   margin-left: 130px;
@@ -257,6 +266,7 @@ video {
 header{
   font-size:xx-large;
   word-spacing: 10px;
+  padding-bottom: 20px;
 
 }
 

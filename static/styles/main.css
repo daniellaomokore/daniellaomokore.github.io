@@ -87,12 +87,12 @@ input:checked + .slider:before {
 
 
 body.dark-mode {
-  background-color: #353434;
+  background-color: #292c35;
   color: whitesmoke;
 }
 
 body.dark-mode footer {
-  background-color: rgb(37, 37, 37);
+  background-color: #1b1c21;
 }
 
 body.dark-mode .navbar-toggler{
@@ -229,7 +229,7 @@ video {
   width: 130px;
   height: 100vh; /* Set the height to the full viewport height */
   position: fixed;
-  background-color: #333;
+  background-color: #23252a;
   color: #fff;
   z-index: 9999;  /*to position the nav bar in front of other parts of the page e.g. images, videos , footer*/
 

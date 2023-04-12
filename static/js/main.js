@@ -91,12 +91,22 @@ So I've wrapped my script in a DOMContentLoaded event listener to make sure the 
 
 document.addEventListener('DOMContentLoaded', function() {
   const toggleSwitch = document.querySelector('#checkbox');
+  const currentTheme = localStorage.getItem('theme');
+
+  if (currentTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    toggleSwitch.checked = true;
+  }
 
   function switchTheme(e) {
+
+    
     if (e.target.checked) {
       document.body.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark');
     } else {
       document.body.classList.remove('dark-mode');
+      localStorage.setItem('theme', 'light');
     }
   }
 

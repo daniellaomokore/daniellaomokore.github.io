@@ -87,13 +87,13 @@ input:checked + .slider:before {
 
 
 body.dark-mode {
-  background-color: #262525;
+  background-color: #313030;
   color: whitesmoke;
 }
 
 body.dark-mode ,
 body.dark-mode footer {
-  background-color: rgb(16, 16, 16);
+  background-color: rgb(41, 40, 40);
 }
 
 body.dark-mode .navbar-toggler{
@@ -316,7 +316,8 @@ body {
   background-color: rgb(101, 175, 169);
   color: white;
   text-align: center;
-  transition: all 0.5s ease;  /*Smooth transition for when you switch to dark mode*/
+  /*transition: all 0.5s ease; */ /*Smooth transition for when you switch to dark mode - commented out to avoid transition between pages */
+
 
 }
 

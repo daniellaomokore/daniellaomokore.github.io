@@ -87,7 +87,7 @@ input:checked + .slider:before {
 
 
 body.dark-mode {
-  background-color: #3a3939;
+  background-color: #353434;
   color: whitesmoke;
 }
 

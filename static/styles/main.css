@@ -87,12 +87,12 @@ input:checked + .slider:before {
 
 
 body.dark-mode {
-  background-color: #292c35;
+  background-color: #1c1e23;
   color: whitesmoke;
 }
 
 body.dark-mode footer {
-  background-color: #1b1c21;
+  background-color: #16171b;
 }
 
 body.dark-mode .navbar-toggler{

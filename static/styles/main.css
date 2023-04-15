@@ -422,11 +422,13 @@ footer {
   background-color: rgb(37, 141, 132);
   color: rgb(255, 255, 255);
   padding: 12px;
+  padding-left: 100px ;
 }
 
 footer a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+
 }
 
 footer a:hover {
@@ -442,13 +444,16 @@ footer a:hover {
 
 @media screen and (max-width: 600px) {
 
+  footer {
+    padding-left: 0px;  /* override the padding left when te screen side is small and doesnt have the side nav*/
+  }
+
   .photo-grid{
     grid-template-columns: repeat(1, 1fr);  /* This means that when the screen is this size of smaller the arrangement of the grid photos goes back to the default where everything is displayed in a single column*/
     align-items: center;
     justify-content: center;
   }
 
-  
   
   .stickynavbar{  
     height: 100vh;

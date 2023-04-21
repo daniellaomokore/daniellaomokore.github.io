@@ -1,11 +1,23 @@
 /* CSS Document */
 /* Note: Multiple Divs can belong to one class /one class , Only one Id can belong to one div */
 
+
+
+.articlelink {
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
 /*increase the side of the left margin so that the main contents of don't get hidden under the side nav bar*/
 .projectsmain{
   margin-left: 130px;
 }
 
+.optionslinks{
+  padding: 9px;
+}
 
 .container {
   width: 85%;
@@ -75,13 +87,12 @@ input:checked + .slider:before {
 
 
 body.dark-mode {
-  background-color: #262525;
+  background-color: #1c1e23;
   color: whitesmoke;
 }
 
-body.dark-mode ,
 body.dark-mode footer {
-  background-color: rgb(16, 16, 16);
+  background-color: #16171b;
 }
 
 body.dark-mode .navbar-toggler{
@@ -214,11 +225,11 @@ video {
 }
 
 
-.navbar {  
+.navbar {
   width: 130px;
   height: 100vh; /* Set the height to the full viewport height */
   position: fixed;
-  background-color: #333;
+  background-color: #23252a;
   color: #fff;
   z-index: 9999;  /*to position the nav bar in front of other parts of the page e.g. images, videos , footer*/
 
@@ -254,6 +265,7 @@ video {
 header{
   font-size:xx-large;
   word-spacing: 10px;
+  padding-bottom: 20px;
 
 }
 
@@ -303,7 +315,8 @@ body {
   background-color: rgb(101, 175, 169);
   color: white;
   text-align: center;
-  transition: all 0.5s ease;  /*Smooth transition for when you switch to dark mode*/
+  /*transition: all 0.5s ease; */ /*Smooth transition for when you switch to dark mode - commented out to avoid transition between pages */
+
 
 }
 
@@ -317,7 +330,7 @@ img{
   width: 70%;
 }
 
-figure{ 
+figure{
   display: flex;
   justify-content: center;
 }
@@ -342,7 +355,7 @@ font-size: large;
 
 
 form {
-  width: 60%;
+  width: 90%;
 }
 
 .inputField {
@@ -409,11 +422,13 @@ footer {
   background-color: rgb(37, 141, 132);
   color: rgb(255, 255, 255);
   padding: 12px;
+  padding-left: 100px ;
 }
 
 footer a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+
 }
 
 footer a:hover {
@@ -429,13 +444,16 @@ footer a:hover {
 
 @media screen and (max-width: 600px) {
 
+  footer {
+    padding-left: 0px;  /* override the padding left when te screen side is small and doesnt have the side nav*/
+  }
+
   .photo-grid{
     grid-template-columns: repeat(1, 1fr);  /* This means that when the screen is this size of smaller the arrangement of the grid photos goes back to the default where everything is displayed in a single column*/
     align-items: center;
     justify-content: center;
   }
 
-  
   
   .stickynavbar{  
     height: 100vh;

@@ -1,10 +1,10 @@
 # daniellaomokore-portfolio
 
-Link: https://daniellao.netlify.app/
+Live Link: https://daniellao.netlify.app/
 
 I developed a dynamic modelling portfolio website from scratch and it comes with some features I'm sure many people would appreciate.
 
-My Favourite Features:
+✨My Favourite Features:
 
 - Dark-mode bar for those who prefer dark mode or often get migraines.
 

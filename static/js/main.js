@@ -182,7 +182,23 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
+// This ensures the first frame of the video is the thumbnail for every video
 
+document.addEventListener('DOMContentLoaded', function() {
+  var videos = document.querySelectorAll('video');
+
+  videos.forEach(function(video) {
+    video.addEventListener('loadeddata', function() {
+      var canvas = document.createElement('canvas');
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+
+      var thumbnail = canvas.toDataURL('image/png');
+      video.setAttribute('poster', thumbnail);
+    });
+  });
+});
 
 
 

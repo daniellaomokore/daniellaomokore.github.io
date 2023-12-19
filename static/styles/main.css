@@ -168,16 +168,12 @@ body.dark-mode .navbar-toggler{
 }
 
 
-.photo{
-  width: 100%;
-}
-
 .photo img {
   width: 90%; /*fill the image 90% of the space its contained in*/
 }
 
 
-.photo.covertwocolumns{
+.covertwocolumns{
   grid-column: 1/3 ;
 }
 

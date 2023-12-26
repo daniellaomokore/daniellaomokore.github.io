@@ -168,7 +168,7 @@ body.dark-mode .navbar-toggler{
 }
 
 
-.photo img {
+.photo img, .instagram-media {
   width: 90%; /*fill the image 90% of the space its contained in*/
 }
 

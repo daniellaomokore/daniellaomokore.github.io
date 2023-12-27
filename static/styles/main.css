@@ -179,6 +179,12 @@ body.dark-mode .navbar-toggler{
 }
 
 
+video {
+  width: 380px;
+  height: 640px
+}
+
+
 
 .underline-on-hover {
   text-decoration: none;
@@ -443,10 +449,7 @@ footer a:hover {
     height: 169px;
   }
 
-  video {
-    transform: scale(0.73); /*scale down an image to 90% of its original size*/
-  
-  }
+
 
   .stickynavbar a{
     font-size: small;

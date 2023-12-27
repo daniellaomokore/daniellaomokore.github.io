@@ -152,6 +152,7 @@ body.dark-mode .navbar-toggler{
   margin-inline: auto;
   justify-items: center;
   align-items: center;
+  width: 80%;
   padding-bottom: 70px;
   padding-top: 30px;
 }
@@ -249,8 +250,7 @@ video {
 header{
   font-size:xx-large;
   word-spacing: 10px;
-  padding-bottom: 20px;
-
+  padding: 0 20px 20px;
 }
 
 .myName{
@@ -277,9 +277,9 @@ h1 {
 h5 {
 letter-spacing: 2px;
 font-size:medium;
-margin-left: 90px;
-text-align: left;
+padding: 0px 20px ;
 }
+
 
 
 table{
@@ -406,7 +406,10 @@ footer {
   background-color: rgb(37, 141, 132);
   color: rgb(255, 255, 255);
   padding: 12px;
-  padding-left: 100px ;
+}
+
+.left-footer-padding{
+  padding-left: 105px;
 }
 
 footer a {
@@ -428,7 +431,7 @@ footer a:hover {
 
 @media screen and (max-width: 600px) {
 
-  footer {
+  .left-footer-padding{
     padding-left: 0px;  /* override the padding left when te screen side is small and doesnt have the side nav*/
   }
 
@@ -437,24 +440,19 @@ footer a:hover {
     align-items: center;
     justify-content: center;
   }
-
   
   .stickynavbar{  
     height: 100vh;
   }
-
 
   .youtubeembeddedvideo {
     width: 100%;
     height: 169px;
   }
 
-
-
   .stickynavbar a{
     font-size: small;
   }
-
 
   .navbar {  
   width: 130px;
@@ -480,8 +478,6 @@ footer a:hover {
   .photo.covertwocolumns{
     grid-column:auto   /*this resolves the issue of the first google uk pic being hidden(due to spanning the 3rd google pic across 2/2 colums) when we have a small screen size*/
   }
-
-  
 
 }
 

@@ -188,12 +188,6 @@ video {
 }
 
 
-.doublegettyphoto{
-  padding-bottom: 50px;
-  transform: scale(0.92); /*scale down an image to 92% of its original size*/
-}
-
-
 .youtubeembeddedvideo {
     width: 72%;
     height: 500px;

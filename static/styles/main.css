@@ -167,6 +167,9 @@ body.dark-mode .navbar-toggler{
   padding-top: 35px;
 }
 
+.photo{
+  width: 100%;
+}
 
 
 .photo img, .photo blockquote{

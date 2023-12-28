@@ -149,7 +149,7 @@ body.dark-mode .navbar-toggler{
   display: grid;
   grid-gap: 50px; /*create gap between items (underneath)*/
   grid-template-columns: repeat(2, 1fr) ; /*declare our columns - 2 columns to be 1 fraction of a whole each*/
-  margin-inline: auto;
+  margin: 0 auto;
   justify-items: center;
   align-items: center;
   width: 80%;

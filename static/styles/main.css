@@ -144,18 +144,20 @@ body.dark-mode .navbar-toggler{
   grid-row: span 2;
 }
 
-/* we use css grid for our contact form and email info area aswell as photo gallerys */
-.photo-grid{
+/* we use css grid for our contact form and email info area aswell as photo gallerys  */
+.photo-grid {
   display: grid;
-  grid-gap: 50px; /*create gap between items (underneath)*/
-  grid-template-columns: repeat(2, 1fr) ; /*declare our columns - 2 columns to be 1 fraction of a whole each*/
+  grid-gap: 50px; /* create gap between items (underneath) */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* dynamic columns with a minimum width of 300px */
   margin: 0 auto;
-  justify-items: center;
+  justify-content: center; /* horizontally center items */
   align-items: center;
   width: 80%;
   padding-bottom: 70px;
   padding-top: 30px;
 }
+
+
 
 .photo-grid-top{
   padding-top: 0px; /*override thepadding top for just the contain form and email section at the top so that it's not really far away from the 'YELLA' Heading*/

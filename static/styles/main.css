@@ -283,7 +283,7 @@ th, td{
 
 
 body {
-  background-color: rgb(70, 137, 132);
+  background-color: rgb(85, 150, 145);
   color: white;
   text-align: center;
   /*transition: all 0.5s ease; */ /*Smooth transition for when you switch to dark mode - commented out to avoid transition between pages */

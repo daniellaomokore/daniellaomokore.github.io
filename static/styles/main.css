@@ -139,11 +139,6 @@ body.dark-mode .navbar-toggler{
 }
 
 
-
-.grid-row-span-2 {
-  grid-row: span 2;
-}
-
 /* we use css grid for our contact form and email info area aswell as photo gallerys  */
 .photo-grid {
   display: grid;
@@ -170,20 +165,13 @@ body.dark-mode .navbar-toggler{
 }
 
 
-
-
 .photo img,.photo video{
   width: 90%; /*fill the image 90% of the space its contained in*/
 }
 
-
 .covertwocolumns{
-  grid-column: 1/3 ;
+  grid-column: span 2 ;
 }
-
-
-
-
 
 
 .underline-on-hover {
@@ -500,4 +488,7 @@ footer a:hover {
 /* Styles for screens with a minimum width of 1025px (desktops) */
 
 @media screen and (min-width: 1025px) {
+  .sizing-for-one-video video{
+    width: 35%; /* Override the width to "auto" for phone screen size */
+  }
 }

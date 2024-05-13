@@ -437,21 +437,32 @@ footer a:hover {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+
 .modal-content {
-  margin: auto;
-  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 80%;
   max-height: 80%;
+}
+
+.modal-content img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .close {
   color: #fff;
   position: absolute;
-  top: 15px;
-  right: 35px;
-  font-size: 40px;
+  top:15px; 
+  right: 35px; 
+  font-size: 50px; 
   cursor: pointer;
 }
+
 
 .close:hover,
 .close:focus {

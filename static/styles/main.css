@@ -413,6 +413,52 @@ footer a:hover {
 /*Make the navbar collapse only when the screen size is less than or equal to the width of a phone (320px) but only if the navbar is currently not shown (i.e., not collapsed)*/
 /*This ensures that the navbar is visible to users when the screen size is larger than 320px, but collapses into a burger menu when viewed on a phone screen.*/
 
+ /* Add your existing CSS styles for .photo-grid and .photo here */
+
+.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 /* Styles for screens with a maximum width of 600px (phones) */

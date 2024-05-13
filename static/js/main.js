@@ -185,10 +185,13 @@ function isValidEmail(email) {
 // This ensures the first frame of the video is the thumbnail for every video
 
 
+function openModal(src) {
+  document.getElementById('myModal').style.display = 'block';
+  document.getElementById('modalImage').src = src;
+}
 
+function closeModal() {
+  document.getElementById('myModal').style.display = 'none';
+}
 
-
-  
-  
-  
   

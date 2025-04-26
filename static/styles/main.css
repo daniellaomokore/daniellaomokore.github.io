@@ -6,7 +6,6 @@
 .articlelink {
   text-decoration: underline;
   font-weight: bold;
-  font-style: italic;
 }
 
 
@@ -242,6 +241,11 @@ header{
 
 .myName{
   padding-bottom: 15px;
+  font-size: 550px;
+}
+
+.myName h1 {
+  font-size: 60px;
 }
 
 p,

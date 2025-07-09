@@ -83,8 +83,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
-
 body.dark-mode {
   background-color: #1c1e23;
   color: whitesmoke;
@@ -93,18 +91,6 @@ body.dark-mode {
 body.dark-mode footer {
   background-color: #16171b;
 }
-
-body.dark-mode .navbar-toggler{
-  border-color: white;
-}
-
-.dark-mode .navbar-toggler:active,
-.dark-mode .navbar-toggler:focus,
-.dark-mode .navbar-toggler:active {
-  border-color: white;
-  box-shadow: 0 0 0 0.2rem white;
-}
-
 
 /*makes the social media icon be size xx-large and when you hover over it the size increases by 1.2*/
 .fab{
@@ -197,13 +183,9 @@ body.dark-mode .navbar-toggler{
 
 
 .navbar {  
-  width: 130px;
   height: 100vh; /* Set the height to the full viewport height */
-  position: fixed;
-  background-color: #23252a;
-  color: #fff;
   z-index: 9999;  /*to position the nav bar in front of other parts of the page e.g. images, videos , footer*/
-
+  width: min-content;
 }
 
 .navbar-nav {
@@ -213,28 +195,20 @@ body.dark-mode .navbar-toggler{
 
 .navbar-nav li {
   font-family: 'Cinzel', serif;
+  padding: 10px;
   line-height: 1;
-  font-size: medium;
-  padding: 10px
 }
 
 
 .navbar-nav li a:hover {
-  color: white;
   text-decoration: none;
 }
 .navbar-nav a , header{
   font-family: 'Cinzel', serif;
 }
 
-
-.nav-link {
-  color: white;
-}
-
-
 header{
-  font-size:xx-large;
+  font-size: xx-large;
   word-spacing: 10px;
   padding: 0 20px 20px;
 }
@@ -506,17 +480,12 @@ footer a:hover {
   }
 
   .navbar {  
-  width: 130px;
-  background-color: transparent;
-  align-items:start; /* put the navbar icon at the start/top vertically */
-  justify-content: center;
   height:fit-content;
+  width: fit-content;
+  padding: 0.5px;
+  border-radius: 3%;
   }
 
-  .navbar-collapse {
-    background-color: rgba(53, 51, 51, 0.865);
-    border-radius:5px;
-  }
   
   .navbar a{
     font-size: small;
@@ -545,7 +514,6 @@ footer a:hover {
     width: 78.2%;
     height: 385px;
   }
-
 
 }
 

@@ -196,11 +196,10 @@ body.dark-mode footer {
 .navbar-nav li {
   padding: 10px;
   line-height: 1;
+  font-family: 'Cinzel', serif;
+
 }
 
-.navbar-nav li a {
-  font-family: 'Cinzel', serif;
-}
 
 .navbar-nav li a:hover {
   text-decoration: none;
@@ -208,9 +207,6 @@ body.dark-mode footer {
 
 header{
   font-family: 'Cinzel', serif;
-}
-
-header{
   font-size: xx-large;
   word-spacing: 10px;
   padding: 0 20px 20px;
@@ -220,8 +216,9 @@ header{
   font-size: 550px;
   padding-bottom: 15px;
   padding-top: 40px;
-
 }
+  
+
 
 .myName h1 {
   font-size: 60px;
@@ -238,6 +235,7 @@ table,
 a {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
+  font-weight: normal;
 }
 
 h1 {

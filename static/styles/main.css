@@ -387,10 +387,6 @@ footer a {
 
 }
 
-footer a:hover {
-  text-decoration: underline;
-}
-
 /*Make the navbar collapse only when the screen size is less than or equal to the width of a phone (320px) but only if the navbar is currently not shown (i.e., not collapsed)*/
 /*This ensures that the navbar is visible to users when the screen size is larger than 320px, but collapses into a burger menu when viewed on a phone screen.*/
 
